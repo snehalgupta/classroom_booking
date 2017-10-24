@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="Pane6" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="492.0" prefWidth="623.0" style="-fx-background-color: #CCFF99;" fx:controller="application.View_RoomsController" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutX="38.0" layoutY="272.0" prefHeight="188.0" prefWidth="228.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="63.0" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btn1" onAction="#viewroomClick" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="C02" GridPane.columnIndex="1" />
+            <Button fx:id="btn2" onAction="#viewroomClick" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="C03" GridPane.columnIndex="2" />
+            <Button fx:id="btn3" onAction="#viewroomClick" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="Button" />
+            <Button fx:id="btn4" onAction="#viewroomClick" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="C11" GridPane.rowIndex="1" />
+            <Button fx:id="btn5" onAction="#viewroomClick" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="C01" />
+            <Button fx:id="btn6" onAction="#viewroomClick" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="C12" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="btn7" onAction="#viewroomClick" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="C13" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="btn8" onAction="#viewroomClick" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="C21" GridPane.rowIndex="2" />
+            <Button fx:id="btn9" onAction="#viewroomClick" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="C02" GridPane.columnIndex="1">
+            <JFXPasswordField />
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="btn10" onAction="#viewroomClick" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="C22" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="btn11" onAction="#viewroomClick" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="C23" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <ImageView fitHeight="100.0" fitWidth="200.0" layoutX="444.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@logo.jpg" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="14.0" layoutY="282.0" prefHeight="44.0" prefWidth="228.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="63.0" minHeight="10.0" prefHeight="63.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <GridPane layoutX="342.0" layoutY="282.0" prefHeight="188.0" prefWidth="228.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="68.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="58.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button onAction="#viewroomClick" fx:id="btn12" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="LR3" GridPane.columnIndex="2" />
+            <Button onAction="#viewroomClick" fx:id="btn13" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="Button" />
+            <Button onAction="#viewroomClick" fx:id="btn14" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="L21" GridPane.rowIndex="1" />
+            <Button onAction="#viewroomClick" fx:id="btn15" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="LR1" />
+            <Button onAction="#viewroomClick" fx:id="btn16" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="L23" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button onAction="#viewroomClick" fx:id="btn17" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="L31" GridPane.rowIndex="2" />
+            <Button onAction="#viewroomClick" fx:id="btn18" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="L33" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button onAction="#viewroomClick" fx:id="btn19"mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="LR2" GridPane.columnIndex="1" />
+            <Button onAction="#viewroomClick" fx:id="btn20"mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="L22" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button onAction="#viewroomClick" fx:id="btn21"mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="L32" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="38.0" layoutY="192.0" prefHeight="36.0" prefWidth="228.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: #FF5252;" text="S01" />
+            <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" text="S02" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <JFXTimePicker layoutX="38.0" layoutY="37.0" promptText="Enter The Time" style="-fx-background-color: white;" />
+      <JFXDatePicker layoutX="38.0" layoutY="74.0" promptText="Enter the Date" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>
+
+

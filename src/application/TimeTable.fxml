@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="Pane3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="477.0" prefWidth="600.0" style="-fx-background-color: #B2FF59;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TimeTableController">
+   <children>
+      <Pane prefHeight="477.0" prefWidth="200.0" style="-fx-background-color: #F44336;">
+         <children>
+            <Button fx:id="timetable" layoutX="14.0" layoutY="100.0" mnemonicParsing="false" onAction="#ttClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #B2FF59;" text="Time -Table" />
+            <Button fx:id="myprof" layoutX="15.0" layoutY="176.0" mnemonicParsing="false" onAction="#myrooClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" text="My Room Bookings" />
+            <Button fx:id="fetchc" layoutX="15.0" layoutY="217.0" mnemonicParsing="false" onAction="#fetchcClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" text="Fetch Courses" />
+            <Button layoutX="10.0" layoutY="28.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #F44336;" text="Welcome">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+            <Button fx:id="myprof" layoutX="15.0" layoutY="138.0" mnemonicParsing="false" onAction="#myprofClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" text="My Profile" />
+         </children>
+      </Pane>
+      
+      <Button layoutX="502.0" layoutY="362.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Back &lt;&lt;" />
+      <Pane layoutX="208.0" layoutY="56.0" prefHeight="110.0" prefWidth="104.0" style="-fx-background-color: pink;">
+         <children>
+            <JFXButton layoutX="-1.0" layoutY="30.0" style="-fx-background-color: cyan;" text="(10am -12am)-IPL" />
+         </children>
+      </Pane>
+      <Pane layoutX="317.0" layoutY="56.0" prefHeight="110.0" prefWidth="131.0" style="-fx-background-color: pink;">
+         <children>
+            <JFXButton layoutX="13.0" layoutY="30.0" style="-fx-background-color: cyan;" text="(1pm -2pm)-SNS" />
+            <JFXButton layoutX="10.0" layoutY="55.0" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: cyan;" text="(3pm-4pm) -DGT" />
+         </children>
+      </Pane>
+      <Pane layoutX="454.0" layoutY="56.0" prefHeight="110.0" prefWidth="137.0" style="-fx-background-color: pink;">
+         <children>
+            <JFXButton layoutX="16.0" layoutY="24.0" style="-fx-background-color: cyan;" text="(11am-12am)-SNS" />
+            <JFXButton layoutX="23.0" layoutY="55.0" style="-fx-background-color: cyan;" text="(1pm -2pm)-PS" />
+         </children>
+      </Pane>
+      <Pane layoutX="219.0" layoutY="210.0" prefHeight="110.0" prefWidth="131.0" style="-fx-background-color: pink;">
+         <children>
+            <JFXButton layoutX="8.0" layoutY="14.0" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: cyan;" text="(1pm -2pm)-SNS" />
+            <JFXButton layoutX="12.0" layoutY="55.0" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: cyan;" text="(4pm-5.30pm)-DM" />
+         </children>
+      </Pane>
+      <Pane layoutX="396.0" layoutY="210.0" prefHeight="110.0" prefWidth="154.0" style="-fx-background-color: pink;">
+         <children>
+            <JFXButton layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: cyan;" text="(9.30-11am)-ML" />
+            <JFXButton layoutX="17.0" layoutY="55.0" prefHeight="25.0" prefWidth="131.0" style="-fx-background-color: cyan;" text="(1pm -2pm)- IED" />
+         </children>
+      </Pane>
+      <RadioButton layoutX="219.0" layoutY="39.0" mnemonicParsing="false" text="MONDAY" />
+      <RadioButton layoutX="325.0" layoutY="39.0" mnemonicParsing="false" text="TUESDAY" />
+      <RadioButton layoutX="457.0" layoutY="39.0" mnemonicParsing="false" text="WEDNESDAY" />
+      <RadioButton layoutX="219.0" layoutY="193.0" mnemonicParsing="false" text="THURSDAY" />
+      <RadioButton layoutX="424.0" layoutY="193.0" mnemonicParsing="false" text="FRIDAY" />
+   </children>
+</AnchorPane>

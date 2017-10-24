@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="pane7" fx:controller="application.SignupController" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #B2FF59;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField layoutX="22.0" layoutY="58.0" prefHeight="25.0" prefWidth="234.0" text="First name" />
+      <TextField layoutX="22.0" layoutY="95.0" prefHeight="25.0" prefWidth="234.0" text=" Last name" />
+      <TextField layoutX="22.0" layoutY="131.0" prefHeight="25.0" prefWidth="234.0" text="email-id" />
+      <TextField layoutX="22.0" layoutY="174.0" prefHeight="25.0" prefWidth="234.0" text="password" />
+      <DatePicker layoutX="22.0" layoutY="232.0" prefHeight="25.0" prefWidth="234.0" />
+      <Label layoutX="29.0" layoutY="206.0" prefHeight="17.0" prefWidth="159.0" text="Enter birth date" />
+      <Label layoutX="22.0" layoutY="14.0" prefHeight="33.0" prefWidth="184.0" text="Sign Up">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Button fx:id="signup" onAction="#homepage" layoutX="430.0" layoutY="232.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="151.0" style="-fx-background-color: #B39DDB;" text="SIGN UP">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

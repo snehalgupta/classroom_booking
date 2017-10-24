@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="Pane2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #B2FF59;" xmlns="http://javafx.com/javafx/8" fx:controller="application.StudentController" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="300.0" prefWidth="200.0" style="-fx-background-color: #F44336;">
+         <children>
+            <Button onAction="#ttClick" layoutX="14.0" layoutY="100.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" fx:id="timetable" text="Time -Table" />
+            <Button onAction="#myprofClick"  layoutX="14.0" layoutY="138.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #B2FF59;" fx:id="myprof" text="My Profile" />
+            <Button onAction="#myrooClick" layoutX="15.0" layoutY="176.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" fx:id="myroo" text="My Room-Bookings" />
+            <Button onAction="#fetchcClick" layoutX="15.0" layoutY="217.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" fx:id="fetchc" text="Fetch Courses" />
+            <Button layoutX="10.0" layoutY="28.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #F44336;" text="Welcome">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <Label layoutX="247.0" layoutY="125.0" prefHeight="25.0" prefWidth="94.0" text="My Courses :" />
+      <Button fx:id="ap" layoutX="240.0" layoutY="144.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="94.0" style="-fx-background-color: #2196F3;" text="Advanced Programming" wrapText="true" />
+      <Button layoutX="348.0" layoutY="144.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="94.0" style="-fx-background-color: #2196F3;" text="Embedded Logic Design" wrapText="true" />
+      <Button layoutX="451.0" layoutY="144.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="94.0" style="-fx-background-color: #2196F3;" text="Signals and Systems" wrapText="true" />
+      <Button layoutX="310.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: pink;" text="Ms Regina Phalegne" />
+      <Button layoutX="310.0" layoutY="38.0" mnemonicParsing="false" text="DOB : 04/04/2004" />
+      <Button layoutX="310.0" layoutY="63.0" mnemonicParsing="false" style="-fx-background-color: pink;" text="Current Semester : Second" />
+      <Button layoutX="310.0" layoutY="88.0" mnemonicParsing="false" text="email id :regina16134@iiitd.ac.in" />
+      
+      <Button layoutX="434.0" layoutY="252.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Back &lt;&lt;" />
+      <ImageView fitHeight="116.0" fitWidth="85.0" layoutX="215.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:Regina.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

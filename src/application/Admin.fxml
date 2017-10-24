@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Pane4" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #B2FF59;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+   <children>
+      <Pane prefHeight="300.0" prefWidth="200.0" style="-fx-background-color: #F44336;">
+         <children>
+            <Button fx:id="myprof" layoutX="14.0" layoutY="138.0" mnemonicParsing="false" onAction="#myprofClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #B2FF59;" text="My Profile" />
+            <Button fx:id="viewreq" layoutX="15.0" layoutY="176.0" mnemonicParsing="false" onAction="#viewreqClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" text="View Requests" />
+            <Button fx:id="bookr" layoutX="15.0" layoutY="217.0" mnemonicParsing="false" onAction="#bookrClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" text="View and Book Room" />
+            <Button layoutX="10.0" layoutY="28.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #F44336;" text="Welcome">
+               <font>
+                  <Font size="23.0" />
+               </font></Button>
+         </children>
+      </Pane>
+      <Label layoutX="247.0" layoutY="125.0" prefHeight="25.0" prefWidth="94.0" text="Jobs" />
+      <Button layoutX="240.0" layoutY="144.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="94.0" style="-fx-background-color: #2196F3;" text="Management" wrapText="true" />
+      <Button layoutX="348.0" layoutY="144.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="94.0" style="-fx-background-color: #2196F3;" text="Infrastructure" wrapText="true" />
+      <Button layoutX="451.0" layoutY="144.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="94.0" style="-fx-background-color: #2196F3;" text="Queries" wrapText="true" />
+      <Button layoutX="310.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: pink;" text="Ms Regina Phalegne" />
+      <Button layoutX="310.0" layoutY="38.0" mnemonicParsing="false" text="DOB : 04/04/1994" />
+      <Button layoutX="310.0" layoutY="63.0" mnemonicParsing="false" style="-fx-background-color: pink;" text="Admin BTech" />
+      <Button layoutX="310.0" layoutY="88.0" mnemonicParsing="false" text="email id : adminbtech@iiitd.ac.in" />
+      
+      <Button fx:id="back" onAction="#myprofClick" layoutX="434.0" layoutY="252.0" mnemonicParsing="false" style="-fx-background-color: red;" text="Back &lt;&lt;" />
+      <ImageView fitHeight="116.0" fitWidth="85.0" layoutX="215.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:AdminImage.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="logout" layoutX="506.0" layoutY="13.0" mnemonicParsing="false" onAction="#logoutClick" prefHeight="25.0" prefWidth="85.0" style="-fx-background-color: #B388FF;" text="LOGOUT" />
+   </children>
+</AnchorPane>
