@@ -14,16 +14,17 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="830.0" style="-fx-background-color: #B2FF59;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Pane prefHeight="435.0" prefWidth="156.0" style="-fx-background-color: #EF5350;">
+      <Pane prefHeight="435.0" prefWidth="181.0" style="-fx-background-color: #EF5350;">
          <children>
-            <Button layoutX="14.0" layoutY="138.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #2196F3;" text="My Profile" />
-            <Button layoutX="15.0" layoutY="176.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #CCFF99;" text="My Bookings" />
-            <Button layoutX="15.0" layoutY="217.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="123.0" style="-fx-background-color: #2196F3;" text="View and Book Room" textAlignment="CENTER" wrapText="true" />
             <Button layoutX="11.0" layoutY="14.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="131.0" style="-fx-background-color: #F44336;" text="Welcome">
                <font>
                   <Font size="23.0" />
                </font></Button>
-            <Button layoutX="14.0" layoutY="279.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="104.0" style="-fx-background-color: #2196F3;" text="Time-Table" />
+            <Button fx:id="timetable" layoutX="6.0" layoutY="135.0" mnemonicParsing="false" onAction="#ttClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" text="Time -Table" />
+            <Button fx:id="myprof" layoutX="6.0" layoutY="168.0" mnemonicParsing="false" onAction="#myprofClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" text="My Profile" />
+            <Button fx:id="myroo" layoutX="6.0" layoutY="205.0" mnemonicParsing="false" onAction="#myrooClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" text="Request Room-booking" />
+            <Button fx:id="myroo1" layoutX="6.0" layoutY="243.0" mnemonicParsing="false" onAction="#myroo1Click" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #B2FF59;" text="My Room Bookings" />
+            <Button fx:id="fetchc" layoutX="6.0" layoutY="282.0" mnemonicParsing="false" onAction="#fetchcClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" text="Fetch Courses" />
          </children>
       </Pane>
       <Label layoutX="206.0" layoutY="14.0" prefHeight="25.0" prefWidth="94.0" text="Requests" />

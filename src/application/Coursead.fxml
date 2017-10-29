@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:controller="application.CourseController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #CCFF99;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #CCFF99;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CourseadController">
    <children>
       <Label layoutX="14.0" layoutY="14.0" style="-fx-background-color: pink;" text="COURSE">
          <font>
@@ -34,6 +34,8 @@
          </font>
       </Label>
       <JFXTextArea layoutX="325.0" layoutY="104.0" prefHeight="116.0" prefWidth="231.0" style="-fx-background-color: white;" text="Monday, Wednesday and Thursday: 11am-12pm in C21&#10;&#10;Tutorials:&#10;Monday 12-1 PM, CSE - 1,2,3,4; Venue : LR1, LR2, S01, S02&#10;Monday 12-1 PM, CSAM - 1,2; Venue: C03, C24&#10;Friday 12-1 PM, ECE; Venue: LR3&#10;&#10;Labs:&#10;Thursday, 12-1 PM, CSE - 1,2,3,4; Venue: L21,L22,L23&#10;Thursday, 12-1 PM, CSAM - 1,2; Venue: LR1, LR2&#10;Thursday, 10-11 AM, ECE; Venue: L21" />
-      <Button fx:id="back" onAction="#homepage1" layoutX="461.0" layoutY="292.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="78.0" style="-fx-background-color: red;" text="Back &lt;&lt;" />
+      <Button fx:id="back" layoutX="459.0" layoutY="350.0" mnemonicParsing="false" onAction="#homepage1" prefHeight="36.0" prefWidth="78.0" style="-fx-background-color: red;" text="Back &lt;&lt;" />
+      <Button fx:id="add" onAction="#homepage2" layoutX="459.0" layoutY="256.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="78.0" text="ADD" />
+      <Button fx:id="drop" onAction="#homepage3" layoutX="459.0" layoutY="304.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="78.0" text="DROP" />
    </children>
 </AnchorPane>

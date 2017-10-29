@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #CCFF99;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Room_FormController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #CCFF99;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Room_FormfController">
    <children>
       <Label fx:id="label" layoutX="17.0" layoutY="17.0" prefHeight="47.0" prefWidth="124.0" style="-fx-background-color: pink;" text="ROOM :">
          <font>
@@ -34,7 +34,7 @@
             <Font name="Comic Sans MS" size="33.0" />
          </font>
       </Label>
-      <JFXButton fx:id="btn0" layoutX="380.0" layoutY="269.0" onAction="#btn0Click" prefHeight="106.0" prefWidth="136.0" style="-fx-background-color: cyan;" text="Send Request" textAlignment="CENTER" wrapText="true">
+      <JFXButton fx:id="btn0" layoutX="380.0" layoutY="269.0" onAction="#btn0Click" prefHeight="106.0" prefWidth="136.0" style="-fx-background-color: cyan;" text="Book Room" textAlignment="CENTER" wrapText="true">
          <font>
             <Font name="Gadugi" size="26.0" />
          </font>

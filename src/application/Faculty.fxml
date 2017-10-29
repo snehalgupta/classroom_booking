@@ -13,24 +13,24 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #B2FF59;" xmlns="http://javafx.com/javafx/8" fx:controller="application.FacultyController" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #B2FF59;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FacultyController">
    <children>
       <Pane prefHeight="300.0" prefWidth="200.0" style="-fx-background-color: #F44336;">
          <children>
-            <Button layoutX="14.0" layoutY="100.0" fx:id="tt" onAction="#ttClick" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" text="Time -Table" />
-            <Button layoutX="14.0" layoutY="138.0" fx:id="myprof" onAction="#myprofClick" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #B2FF59;" text="My Profile" />
-            <Button layoutX="15.0" layoutY="176.0" fx:id="viewroom" onAction="#viewroomClick" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" text="View and Book Room" />
-            <Button layoutX="10.0" layoutY="28.0"  mnemonicParsing="false" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #F44336;" text="Welcome">
+            <Button fx:id="tt" layoutX="14.0" layoutY="100.0" mnemonicParsing="false" onAction="#ttClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" text="Time -Table" />
+            <Button fx:id="myprof" layoutX="14.0" layoutY="138.0" mnemonicParsing="false" onAction="#myprofClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #B2FF59;" text="My Profile" />
+            <Button fx:id="viewroom" layoutX="15.0" layoutY="176.0" mnemonicParsing="false" onAction="#viewroomClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" text="View and Book Room" />
+            <Button layoutX="10.0" layoutY="28.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #F44336;" text="Welcome">
                <font>
                   <Font size="23.0" />
                </font></Button>
-            <Button layoutX="14.0" layoutY="213.0" fx:id="myroom" onAction="#myrooClick" mnemonicParsing="false" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" text="My Room-Bookings" />
+            <Button fx:id="myroom" layoutX="14.0" layoutY="213.0" mnemonicParsing="false" onAction="#myrooClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" text="My Room-Bookings" />
          </children>
       </Pane>
       <Label layoutX="247.0" layoutY="125.0" prefHeight="25.0" prefWidth="94.0" text=" Courses Taught :" />
-      <Button layoutX="240.0" layoutY="144.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="94.0" style="-fx-background-color: #2196F3;" text="Advanced Programming" wrapText="true" />
-      <Button layoutX="348.0" layoutY="144.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="94.0" style="-fx-background-color: #2196F3;" text="DSA" wrapText="true" />
-      <Button layoutX="451.0" layoutY="144.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="94.0" style="-fx-background-color: #2196F3;" text="IP" wrapText="true" />
+      <Button fx:id="cou1" onAction="#cou1Click" layoutX="240.0" layoutY="144.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="94.0" style="-fx-background-color: #2196F3;" text="Advanced Programming" wrapText="true" />
+      <Button fx:id="cou2" onAction="#cou2Click" layoutX="348.0" layoutY="144.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="94.0" style="-fx-background-color: #2196F3;" text="DSA" wrapText="true" />
+      <Button fx:id="cou3" onAction="#cou3Click" layoutX="451.0" layoutY="144.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="94.0" style="-fx-background-color: #2196F3;" text="IP" wrapText="true" />
       <Button layoutX="310.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: pink;" text="Mr Ravi Sharma" />
       <Button layoutX="310.0" layoutY="38.0" mnemonicParsing="false" text="DOB : 04/10/2004" />
       <Button layoutX="310.0" layoutY="63.0" mnemonicParsing="false" style="-fx-background-color: pink;" text="Teaching Faculty" />
@@ -42,5 +42,6 @@
             <Image url="file:FacultyImage.png" />
          </image>
       </ImageView>
+      <Button fx:id="logout" onAction="#LoginClick"  layoutX="498.0" layoutY="13.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="LOGOUT" />
    </children>
 </AnchorPane>

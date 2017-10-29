@@ -11,28 +11,34 @@ import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
 
-public class StudentController {
+public class FetchController {
 
     @FXML
     Button timetable;
     @FXML
     Button myprof ;
     @FXML
-    Button myroo1 ;
-    @FXML
-    Button cou1 ;
-    @FXML
-    Button cou2 ;
-    @FXML
-    Button cou3 ;
-    @FXML
     Button myroo;
     @FXML
     Button fetchc;
     @FXML
-    Button logout;
+    Button back;
     @FXML
     AnchorPane Pane2;
+    @FXML
+    Button ap0;
+    @FXML
+    Button ap1;
+    @FXML
+    Button ap11;
+    @FXML
+    Button ap111;
+    @FXML
+    Button ap1111;
+    @FXML
+    Button ap1112;
+    @FXML
+    Button ap1113;
    
     @FXML
     private void ttClick(ActionEvent event) throws IOException{
@@ -65,46 +71,6 @@ public class StudentController {
         stage.show();
        }
     @FXML
-    private void myroo1Click(ActionEvent event) throws IOException{
-        Stage stage = null; 
-        Parent root = null; 
-        stage=(Stage) myroo1.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("pendings.fxml"));
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-       }
-    @FXML
-    private void couClick1(ActionEvent event) throws IOException{
-        Stage stage = null; 
-        Parent root = null; 
-        stage=(Stage) cou1.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("Course.fxml"));
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-       }
-    @FXML
-    private void couClick2(ActionEvent event) throws IOException{
-        Stage stage = null; 
-        Parent root = null; 
-        stage=(Stage) cou2.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("Course.fxml"));
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-       }
-    @FXML
-    private void couClick3(ActionEvent event) throws IOException{
-        Stage stage = null; 
-        Parent root = null; 
-        stage=(Stage) cou3.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("Course.fxml"));
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-       }
-    @FXML
     private void fetchcClick(ActionEvent event) throws IOException{
         Stage stage = null; 
         Parent root = null; 
@@ -115,11 +81,81 @@ public class StudentController {
         stage.show();
        }
     @FXML
-    private void logoutClick(ActionEvent event) throws IOException{
+    private void myprofClick1(ActionEvent event) throws IOException{
         Stage stage = null; 
         Parent root = null; 
-        stage=(Stage) logout.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("HomePage.fxml"));
+        stage=(Stage) back.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("Student.fxml"));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+       }
+    @FXML
+    private void couClick1(ActionEvent event) throws IOException{
+        Stage stage = null; 
+        Parent root = null; 
+        stage=(Stage) ap1.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("Coursead.fxml"));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+       }
+    @FXML
+    private void couClick0(ActionEvent event) throws IOException{
+        Stage stage = null; 
+        Parent root = null; 
+        stage=(Stage) ap0.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("Coursead.fxml"));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+       }
+    @FXML
+    private void couClick2(ActionEvent event) throws IOException{
+        Stage stage = null; 
+        Parent root = null; 
+        stage=(Stage) ap11.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("Coursead.fxml"));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+       }
+    @FXML
+    private void couClick3(ActionEvent event) throws IOException{
+        Stage stage = null; 
+        Parent root = null; 
+        stage=(Stage) ap111.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("Coursead.fxml"));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+       }
+    @FXML
+    private void couClick4(ActionEvent event) throws IOException{
+        Stage stage = null; 
+        Parent root = null; 
+        stage=(Stage) ap1111.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("Coursead.fxml"));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+       }
+    @FXML
+    private void couClick5(ActionEvent event) throws IOException{
+        Stage stage = null; 
+        Parent root = null; 
+        stage=(Stage) ap1112.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("Coursead.fxml"));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+       }
+    @FXML
+    private void couClick6(ActionEvent event) throws IOException{
+        Stage stage = null; 
+        Parent root = null; 
+        stage=(Stage) ap1113.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("Coursead.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();

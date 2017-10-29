@@ -51,7 +51,7 @@ public class AdminController {
         Stage stage = null; 
         Parent root = null; 
         stage=(Stage) bookr.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("Student.fxml"));
+        root = FXMLLoader.load(getClass().getResource("View_Rooms.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();

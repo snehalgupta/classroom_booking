@@ -18,9 +18,17 @@ public class FacultyController {
     @FXML
     Button myprof ;
     @FXML
+    Button cou1;
+    @FXML
+    Button cou2;
+    @FXML
+    Button cou3;
+    @FXML
     Button viewroom;
     @FXML
     Button myroom;
+    @FXML
+    Button logout;
     @FXML
     AnchorPane Pane5;
    
@@ -59,7 +67,47 @@ public class FacultyController {
         Stage stage = null; 
         Parent root = null; 
         stage=(Stage) viewroom.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("View_Rooms.fxml"));
+        root = FXMLLoader.load(getClass().getResource("View_Roomsf.fxml"));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+       }
+    @FXML
+    private void LoginClick(ActionEvent event) throws IOException{
+        Stage stage = null; 
+        Parent root = null; 
+        stage=(Stage) logout.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("HomePage.fxml"));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+       }
+    @FXML
+    private void cou1Click(ActionEvent event) throws IOException{
+        Stage stage = null; 
+        Parent root = null; 
+        stage=(Stage) cou1.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("Coursef.fxml"));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+       }
+    @FXML
+    private void cou2Click(ActionEvent event) throws IOException{
+        Stage stage = null; 
+        Parent root = null; 
+        stage=(Stage) cou2.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("Coursef.fxml"));
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+       }
+    @FXML
+    private void cou3Click(ActionEvent event) throws IOException{
+        Stage stage = null; 
+        Parent root = null; 
+        stage=(Stage) cou3.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("Coursef.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
