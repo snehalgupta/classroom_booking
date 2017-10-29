@@ -13,7 +13,7 @@
       <Pane prefHeight="477.0" prefWidth="200.0" style="-fx-background-color: #F44336;">
          <children>
             <Button fx:id="timetable" layoutX="14.0" layoutY="100.0" mnemonicParsing="false" onAction="#ttClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #B2FF59;" text="Time -Table" />
-            <Button fx:id="myprof" layoutX="15.0" layoutY="176.0" mnemonicParsing="false" onAction="#myrooClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" text="My Room Bookings" />
+            <Button fx:id="myroo" layoutX="15.0" layoutY="176.0" mnemonicParsing="false" onAction="#myrooClick" prefHeight="25.0" prefWidth="170.0" style="-fx-background-color: #2196F3;" text="My Room Bookings" />
             <Button layoutX="10.0" layoutY="28.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="178.0" style="-fx-background-color: #F44336;" text="Welcome">
                <font>
                   <Font size="23.0" />

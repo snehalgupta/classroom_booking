@@ -49,7 +49,7 @@ public class TimeTableController {
         Stage stage = null; 
         Parent root = null; 
         stage=(Stage) myroo.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("Student.fxml"));
+        root = FXMLLoader.load(getClass().getResource("pending.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -58,8 +58,8 @@ public class TimeTableController {
     private void fetchcClick(ActionEvent event) throws IOException{
         Stage stage = null; 
         Parent root = null; 
-        stage=(Stage) myroo.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("Student.fxml"));
+        stage=(Stage) fetchc.getScene().getWindow();
+        root = FXMLLoader.load(getClass().getResource("FETCH.fxml"));
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
