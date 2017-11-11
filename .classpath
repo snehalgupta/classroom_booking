@@ -4,6 +4,23 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javafx"/>
 	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jfx"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/opencsv"/>
 	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/jfoenix.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/commons-lang3-3.6-bin/commons-lang3-3.6/commons-lang3-3.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/commons-lang3-3.6-bin/commons-lang3-3.6/commons-lang3-3.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/commons-lang3-3.6-bin/commons-lang3-3.6/commons-lang3-3.6-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/commons-lang3-3.6-bin/commons-lang3-3.6/commons-lang3-3.6-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/commons-lang3-3.6-bin/commons-lang3-3.6/commons-lang3-3.6-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/commons-beanutils-1.9.3-bin/commons-beanutils-1.9.3/commons-beanutils-1.9.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/commons-beanutils-1.9.3-bin/commons-beanutils-1.9.3/commons-beanutils-1.9.3-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/commons-beanutils-1.9.3-bin/commons-beanutils-1.9.3/commons-beanutils-1.9.3-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/commons-beanutils-1.9.3-bin/commons-beanutils-1.9.3/commons-beanutils-1.9.3-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/commons-beanutils-1.9.3-bin/commons-beanutils-1.9.3/commons-beanutils-1.9.3-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/commons-text-1.1-bin/commons-text-1.1/commons-text-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/commons-text-1.1-bin/commons-text-1.1/commons-text-1.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/commons-text-1.1-bin/commons-text-1.1/commons-text-1.1-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/commons-text-1.1-bin/commons-text-1.1/commons-text-1.1-tests.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/commons-text-1.1-bin/commons-text-1.1/commons-text-1.1-test-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
