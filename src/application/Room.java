@@ -1,3 +1,5 @@
+package application;
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -7,8 +9,13 @@ import java.io.Serializable;
 
 public class Room implements Serializable {
 private boolean availabilty;
-private static String Room_number;
+public String Room_number;
 private int Capacity;
+
+
+public Room(String n1){
+	Room_number=n1;
+}
 public boolean isAvailabilty() {
 	return availabilty;
 }
