@@ -28,8 +28,11 @@ public class HomePageController {
     private void AdminClick(ActionEvent event) throws IOException{
         Stage stage = null; 
         Parent root = null; 
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SIGNUP.fxml"));
         stage=(Stage) Admin.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("SIGNUP.fxml"));
+        root = (Parent)fxmlLoader.load();
+        SignupController controller = fxmlLoader.<SignupController>getController();
+        controller.type="Admin";
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -38,8 +41,11 @@ public class HomePageController {
     private void FacultyClick(ActionEvent event) throws IOException{
         Stage stage = null; 
         Parent root = null; 
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SIGNUP.fxml"));
         stage=(Stage) Faculty.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("SIGNUP.fxml"));
+        root = (Parent)fxmlLoader.load();
+        SignupController controller = fxmlLoader.<SignupController>getController();
+        controller.type="Faculty";
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -48,8 +54,11 @@ public class HomePageController {
     private void StudentClick(ActionEvent event) throws IOException{
         Stage stage = null; 
         Parent root = null; 
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SIGNUP.fxml"));
         stage=(Stage) Student.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("SIGNUP.fxml"));
+        root = (Parent)fxmlLoader.load();
+        SignupController controller = fxmlLoader.<SignupController>getController();
+        controller.type="Student";
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();

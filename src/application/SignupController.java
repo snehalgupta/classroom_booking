@@ -8,8 +8,12 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import java.util.Properties;    
+import javax.mail.*;    
+import javax.mail.internet.*; 
 
 public class SignupController {
 
@@ -21,13 +25,26 @@ public class SignupController {
    
     @FXML
     AnchorPane Pane7;
+    
+    @FXML
+    TextField emailid;
+    
+    String type;
    
     @FXML
     private void homepage(ActionEvent event) throws IOException{
         Stage stage = null; 
         Parent root = null; 
         stage=(Stage) signup.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("HomePage.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Verification.fxml"));
+        //System.out.println(emailid.getText());
+        double key=Math.random()*10000+1;
+        String keys=String.valueOf(key);
+        Mailer.send("snehalgupta10@gmail.com","desirhymes",emailid.getText(),"Confirmation key",keys);
+        root = (Parent)fxmlLoader.load();
+        VerificationController controller = fxmlLoader.<VerificationController>getController();
+        controller.type=type;
+        controller.key=keys;
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -46,5 +63,34 @@ public class SignupController {
    
 }
 
-
+class Mailer{  
+    public static void send(String from,String password,String to,String sub,String msg){  
+          //Get properties object    
+          Properties props = new Properties();    
+          props.put("mail.smtp.host", "smtp.gmail.com");    
+          props.put("mail.smtp.socketFactory.port", "465");    
+          props.put("mail.smtp.socketFactory.class",    
+                    "javax.net.ssl.SSLSocketFactory");    
+          props.put("mail.smtp.auth", "true");    
+          props.put("mail.smtp.port", "465");    
+          //get Session   
+          Session session = Session.getDefaultInstance(props,    
+           new javax.mail.Authenticator() {    
+           protected PasswordAuthentication getPasswordAuthentication() {    
+           return new PasswordAuthentication(from,password);  
+           }    
+          });    
+          //compose message    
+          try {    
+           MimeMessage message = new MimeMessage(session);    
+           message.addRecipient(Message.RecipientType.TO,new InternetAddress(to));    
+           message.setSubject(sub);    
+           message.setText(msg);    
+           //send message  
+           Transport.send(message);    
+           System.out.println("message sent successfully");    
+          } catch (MessagingException e) {throw new RuntimeException(e);}    
+             
+    }  
+}  
 
