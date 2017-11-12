@@ -80,6 +80,7 @@ public class Main extends Application {
 						Room r1=new Room(temp.substring(x+1));
 						roo.add(r1);
 						RoomList.add(r1);
+						r1.serialize();
 					}
 				}
 				event e1=new event(days.get(py),start,end,roo);
@@ -131,6 +132,7 @@ public class Main extends Application {
 									Room r9=new Room(arq[j1].substring(ecz+1,yuz));
 									rooz.add(r9);
 									RoomList.add(r9);
+									r9.serialize();
 									ecz=yuz;
 									endindex=yuz;
 								}
@@ -182,6 +184,7 @@ public class Main extends Application {
 									Room r9=new Room(row[12].substring(ecz+1,yuz));
 									rooz.add(r9);
 									RoomList.add(r9);
+									r9.serialize();
 									ecz=yuz;
 									endindex=yuz;
 								}
@@ -234,25 +237,26 @@ public class Main extends Application {
 			{
 				try {
 					//File CollegeFile= new File("College.txt");
-					{
+					/*{
 						//College
 						currCollege=College.deserialize();
-					}
+					}*/
 					{
 						//Student
 
-						File StudentFile= new File("Student/");
+						/*File StudentFile= new File("Student/");
 						for(String s :StudentFile.list())
 						{
 						StudentList.add(Student.deserialize(s));
-						}
+						}*/
 
 						File RoomFile= new File("Room/");
 						for(String s :RoomFile.list())
-						{
-						RoomList.add(Room.deserialize(s));
+						{Room des=Room.deserialize(s);
+						RoomList.add(des);
+						//System.out.println(des.Room_number);
 						}
-						File CourseFile= new File("Course/");
+						/*File CourseFile= new File("Course/");
 						for(String s :CourseFile.list())
 						{
 						CourseList.add(Course.deserialize(s));
@@ -271,9 +275,9 @@ public class Main extends Application {
 						for(String s :RequestFile.list())
 						{
 						RequestList.add(Request.deserialize(s));
-						}
+						}*/
 						
-	String[] arrr=reader.readLine().split(" ");
+	//String[] arrr=reader.readLine().split(" ");
 
 
 

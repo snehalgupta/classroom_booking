@@ -22,5 +22,7 @@
 	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/commons-text-1.1-bin/commons-text-1.1/commons-text-1.1-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/commons-text-1.1-bin/commons-text-1.1/commons-text-1.1-tests.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/commons-text-1.1-bin/commons-text-1.1/commons-text-1.1-test-sources.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/mailactivation/activation.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Snehal/Documents/Downloads/mailactivation/mail.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

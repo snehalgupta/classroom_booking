@@ -41,12 +41,12 @@ public class Admin extends Member{
 
 	}
 
-	public	void	serialize(Admin s1)	throws	IOException	{
+	public	void	serialize()	throws	IOException	{
 
 		ObjectOutputStream out	=	null;	
 		try	{	
-			out	=	new	ObjectOutputStream	(new FileOutputStream("Admin/"+s1.Name+".txt"));	
-			out.writeObject(s1);	
+			out	=	new	ObjectOutputStream	(new FileOutputStream("Admin/"+this.Name+".txt"));	
+			out.writeObject(this);	
 		}	
 		finally
 		{	

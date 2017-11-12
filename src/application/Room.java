@@ -41,12 +41,12 @@ public Room(boolean availabilty, String room_number, int capacity) {
 	Capacity = capacity;
 }
 
-public	void	serialize(Room s1)	throws	IOException	{
+public	void	serialize()	throws	IOException	{
 	
 	ObjectOutputStream out	=	null;	
 	try	{	
-		out	=	new	ObjectOutputStream	(new FileOutputStream("Room/"+s1.Room_number+".txt"));	
-		out.writeObject(s1);	
+		out	=	new	ObjectOutputStream	(new FileOutputStream("./Room/"+Room_number+".txt"));	
+		out.writeObject(this);	
 		}	
 	finally
 	{	
