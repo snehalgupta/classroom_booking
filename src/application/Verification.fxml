@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 
-<AnchorPane prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #B2FF59;" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.VerificationController" xmlns="http://javafx.com/javafx/8.0.141">
+<AnchorPane prefHeight="300.0" prefWidth="600.0" style="-fx-background-color: #B2FF59;" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.VerificationController" xmlns="http://javafx.com/javafx/8.0.141">
    <children>
       <Label layoutX="28.0" layoutY="27.0" prefHeight="50.0" prefWidth="499.0" text="A validation key has been sent to your email . " />
       <Label layoutX="28.0" layoutY="65.0" prefHeight="50.0" prefWidth="499.0" text="Kindly enter the validation key to complete the process of sign-up." />

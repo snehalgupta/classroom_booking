@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 
 
 public class HomePageController {
-
+	College college;
     @FXML
     Button Admin;
     @FXML
@@ -33,6 +33,7 @@ public class HomePageController {
         root = (Parent)fxmlLoader.load();
         SignupController controller = fxmlLoader.<SignupController>getController();
         controller.type="Admin";
+        controller.college=college;
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -46,6 +47,7 @@ public class HomePageController {
         root = (Parent)fxmlLoader.load();
         SignupController controller = fxmlLoader.<SignupController>getController();
         controller.type="Faculty";
+        controller.college=college;
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -59,6 +61,7 @@ public class HomePageController {
         root = (Parent)fxmlLoader.load();
         SignupController controller = fxmlLoader.<SignupController>getController();
         controller.type="Student";
+        controller.college=college;
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();

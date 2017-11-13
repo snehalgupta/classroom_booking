@@ -9,8 +9,8 @@ import java.util.List;
 
 public class Admin extends Member{
 
-	public Admin(College thisCollege, List<Room> myBookings, String name, String email, String password) {
-		super(thisCollege, myBookings, name, email, password);
+	public Admin(College thisCollege, String name, String email, String password) {
+		super(thisCollege, name, email, password);
 		// TODO Auto-generated constructor stub
 	}
 	private void book_room(Room r) {

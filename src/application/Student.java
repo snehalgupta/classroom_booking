@@ -8,8 +8,8 @@ import java.io.ObjectOutputStream;
 import java.util.List;
 
 public class Student extends Member{
-	public Student(College thisCollege, List<Room> myBookings, String name, String email, String password) {
-		super(thisCollege, myBookings, name, email, password);
+	public Student(College thisCollege, String name, String email, String password) {
+		super(thisCollege, name, email, password);
 		// TODO Auto-generated constructor stub
 	}
 	private List<Course> TimeTable;
@@ -49,12 +49,12 @@ public class Student extends Member{
 		MY_Req = mY_Req;
 	}
 	
-	public	void	serialize(Student s1)	throws	IOException	{
+	public	void	serialize()	throws	IOException	{
 		
 		ObjectOutputStream out	=	null;	
 		try	{	
-			out	=	new	ObjectOutputStream	(new FileOutputStream("Student/"+s1.Name+".txt"));	
-			out.writeObject(s1);	
+			out	=	new	ObjectOutputStream	(new FileOutputStream("Student/"+this.Name+".txt"));	
+			out.writeObject(this);	
 			}	
 		finally
 		{	

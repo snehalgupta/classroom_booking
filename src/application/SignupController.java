@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -16,7 +17,7 @@ import javax.mail.*;
 import javax.mail.internet.*; 
 
 public class SignupController {
-
+	College college;
     @FXML
     Button signup;
     
@@ -28,6 +29,12 @@ public class SignupController {
     
     @FXML
     TextField emailid;
+    @FXML
+    TextField first;
+    @FXML
+    TextField last;
+    @FXML
+    PasswordField passwd;
     
     String type;
    
@@ -37,17 +44,23 @@ public class SignupController {
         Parent root = null; 
         stage=(Stage) signup.getScene().getWindow();
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Verification.fxml"));
+        root = (Parent)fxmlLoader.load();
         //System.out.println(emailid.getText());
         double key=Math.random()*10000+1;
         String keys=String.valueOf(key);
-        Mailer.send("snehalgupta10@gmail.com","desirhymes",emailid.getText(),"Confirmation key",keys);
-        root = (Parent)fxmlLoader.load();
+        Mailer.send("snehalgupta10@gmail.com","student1001",emailid.getText(),"Confirmation key",keys);
         VerificationController controller = fxmlLoader.<VerificationController>getController();
         controller.type=type;
         controller.key=keys;
+        controller.name=first.getText()+" "+last.getText();
+        controller.email=emailid.getText();
+        controller.passwd=passwd.getText();
+        controller.college=college;
+        
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+       
        }
     
     @FXML
