@@ -49,7 +49,7 @@ public class SignupController {
         //System.out.println(emailid.getText());
         double key=Math.random()*10000+1;
         String keys=String.valueOf(key);
-        Mailer.send("snehalgupta10@gmail.com","student1001",emailid.getText(),"Confirmation key",keys);
+        Mailer.send("snehalgupta10@gmail.com","desirhymes",emailid.getText(),"Confirmation key",keys);
         VerificationController controller = fxmlLoader.<VerificationController>getController();
         controller.type=type;
         controller.key=keys;
