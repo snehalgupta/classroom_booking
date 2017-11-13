@@ -42,6 +42,7 @@ public class VerificationController {
         		Admin a1=new Admin(college,name,email,passwd);
         		college.MemberList.add(a1);
         		college.adminList.add(a1);
+        		college.emails.add(email);
         		a1.thisCollege=college;
         		a1.serialize();
         	}
@@ -49,6 +50,7 @@ public class VerificationController {
         		Faculty f1=new Faculty(college,name,email,passwd);
         		college.MemberList.add(f1);
         		college.FacultyList.add(f1);
+        		college.emails.add(email);
         		f1.thisCollege=college;
         		f1.serialize();
         	}
@@ -56,6 +58,7 @@ public class VerificationController {
         		Student s1=new Student(college,name,email,passwd);
         		college.MemberList.add(s1);
         		college.StudentList.add(s1);
+        		college.emails.add(email);
         		s1.thisCollege=college;
         		s1.serialize();
         	}

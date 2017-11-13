@@ -48,9 +48,9 @@ public class College implements Serializable {
 			out.close();	
 		}
 	}
-	public	static College deserialize(String u) throws	IOException,	ClassNotFoundException {ObjectInputStream	in	=	null;	
+	public	static College deserialize() throws	IOException,	ClassNotFoundException {ObjectInputStream	in	=	null;	
 	try	{	
-		String fo="Admin/"+"IIITD";
+		String fo="Admin/"+"IIITD.txt";
 		in	=		new	ObjectInputStream	(	new	FileInputStream(fo));	
 		College	s1	=	(College)	in.readObject();		
 		return s1;
@@ -88,29 +88,7 @@ public class College implements Serializable {
 	
 	
 
-public	void	serialize(College s1)	throws	IOException	{
-	
-	ObjectOutputStream out	=	null;	
-	try	{	
-		out	=	new	ObjectOutputStream	(new FileOutputStream("College/"+s1.hashCode()+".txt"));	
-		out.writeObject(s1);	
-		}	
-	finally
-	{	
-			out.close();	
-		}
-		}
-public	static	College deserialize() throws	IOException,	ClassNotFoundException {ObjectInputStream	in	=	null;	
-								try	{	
-									String fo="College.txt";
-								in	=		new	ObjectInputStream	(	new	FileInputStream(fo));	
-												College	s1	=	(College)	in.readObject();		
-												return s1;
 
-								}	finally	{	
-												in.close();	
-								}	
-				}
 
 
 	
