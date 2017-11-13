@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 
 
 public class AdminController {
-
+	College college;
     @FXML
     Button myprof;
     @FXML

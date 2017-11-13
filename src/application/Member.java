@@ -1,16 +1,17 @@
 package application;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Member implements Serializable {
 	public College thisCollege;
 	public List<Room> MyBookings;
 	public String Name;
-	public Member(College thisCollege, List<Room> myBookings, String name, String email, String password) {
+	public Member(College thisCollege,String name, String email, String password) {
 		super();
 		this.thisCollege = thisCollege;
-		MyBookings = myBookings;
+		MyBookings = new ArrayList<Room>();
 		Name = name;
 		this.email = email;
 		this.password = password;

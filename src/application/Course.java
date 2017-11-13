@@ -1,5 +1,6 @@
 package application;
 
+import java.io.Serializable;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -7,7 +8,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
-class event{
+class event implements Serializable{
 	String day;
 	String start;
 	String end;
@@ -25,7 +26,7 @@ class event{
 		return ans;
 	}
 }
-public class Course {
+public class Course implements Serializable {
 public String ismandatory;
 public String name;
 public String Code;
@@ -47,6 +48,7 @@ public Course(String n1,String n2,String n3,String n4,int n5,String n6,ArrayList
 	arr=n7;
 	preconditions=n8;
 	postconditions=n9;
+	audience=200;
 }
 
 public String toString(){

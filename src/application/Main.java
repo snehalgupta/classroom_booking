@@ -21,15 +21,14 @@ import javafx.stage.Stage;
 
 
 public class Main extends Application {
+	public static College college;
 	@Override
+	
 	public void start(Stage primaryStage) {
 		try {
-			ArrayList<Student> StudentList = new ArrayList<Student>(); 
-			ArrayList<Admin> AdminList = new ArrayList<Admin>();
-			ArrayList<Faculty> FacultyList = new ArrayList<Faculty>();
+			college=new College();
 			HashSet<Room> RoomList = new HashSet<Room>();
-			ArrayList<Course> CourseList = new ArrayList<Course>(); 
-			ArrayList<Request>  RequestList=new ArrayList<Request>();
+			//ArrayList<Course> CourseList = new ArrayList<Course>();
 			String csvFilename = "./src/Sample.csv";
 			CSVReader csvReader = new CSVReader(new FileReader(csvFilename));
 			String[] row = null;
@@ -52,10 +51,7 @@ public class Main extends Application {
 			days.add("Friday");
 			
 			ArrayList<event> arr=new ArrayList<event>() ;
-			List<String> preconditions=new ArrayList<String>();
-			List<String> postconditions=new ArrayList<String>();
 			List<Room> roo=new ArrayList<Room>();
-			int audience ;
 			row=csvReader.readNext();
 			while((row = csvReader.readNext()) != null) {
 				int py=0;
@@ -84,6 +80,7 @@ public class Main extends Application {
 					}
 				}
 				event e1=new event(days.get(py),start,end,roo);
+				college.events.add(e1);
 				arr.add(e1);}
 				//System.out.println("here1");
 				/*if(roo.size()>0){
@@ -146,6 +143,7 @@ public class Main extends Application {
 					}
 					System.out.println();*/
 					arr.add(e2);
+					college.events.add(e2);
 					//System.out.println("here2");
 				}
 				}
@@ -198,6 +196,7 @@ public class Main extends Application {
 						System.out.print(rooz.get(iu).Room_number+" ");
 					}
 					System.out.println();*/
+					college.events.add(e2);
 					arr.add(e2);}
 					//System.out.println("herer3");
 					String[] precw=row[13].split(" ");
@@ -209,12 +208,15 @@ public class Main extends Application {
 						System.out.println(postw[0]);
 					}*/
 					Course c1=new Course(ismandatory,name,Code,Instructor,credits,acronym,arr,precw,postw);
-					CourseList.add(c1);
+					college.CourseList.add(c1);
 					arr=new ArrayList<event>();
 			}
 			csvReader.close();
-			for(int io=0;io<CourseList.size();io++){
-				System.out.println(CourseList.get(io));
+			for(int io=0;io<college.CourseList.size();io++){
+				System.out.println(college.CourseList.get(io));
+			}
+			for(Room tro : RoomList){
+				college.rooms.add(tro);
 			}
 			BufferedReader reader=new BufferedReader(new InputStreamReader(System.in));
 			int Value =0;
@@ -222,7 +224,6 @@ public class Main extends Application {
 			System.out.println("Enter 1 for databse");
 			System.out.println("Enter 2 for prev session");
 			Value=	Integer.parseInt(reader.readLine());
-			College currCollege=new College();
 			
 
 
@@ -265,13 +266,15 @@ public class Main extends Application {
 						for(String s :FacultyFile.list())
 						{
 						FacultyList.add(Faculty.deserialize(s));
-						}
+						}*/
 						File AdminFile= new File("Admin/");
 						for(String s :AdminFile.list())
 						{
-						AdminList.add(Admin.deserialize(s));
+							Admin as=Admin.deserialize(s);
+							System.out.println(as.email+" "+as.Name);
+						college.adminList.add(as);
 						}
-						File RequestFile= new File("Request/");
+						/*File RequestFile= new File("Request/");
 						for(String s :RequestFile.list())
 						{
 						RequestList.add(Request.deserialize(s));
@@ -290,16 +293,17 @@ public class Main extends Application {
 					e.printStackTrace();
 				}
 
-
-			 FXMLLoader loader = new FXMLLoader();
-	            loader.setLocation(Main.class.getResource("HomePage.fxml"));
-	            AnchorPane rootLayout = (AnchorPane) loader.load();
-
+			}
+			 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("HomePage.fxml"));
+	            AnchorPane rootLayout = (AnchorPane) fxmlLoader.load();
+	            HomePageController controller = fxmlLoader.<HomePageController>getController();
+	            controller.college=college;
+	 
 	            // Show the scene containing the root layout.
 	            Scene scene = new Scene(rootLayout);
 	            primaryStage.setScene(scene);
 	            primaryStage.show();
-		}
+		
 			}catch(Exception e) {
 			e.printStackTrace();
 		}
