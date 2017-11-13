@@ -43,6 +43,7 @@ public class SignupController {
         Stage stage = null; 
         Parent root = null; 
         stage=(Stage) signup.getScene().getWindow();
+        if(!college.emails.contains(emailid)){
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Verification.fxml"));
         root = (Parent)fxmlLoader.load();
         //System.out.println(emailid.getText());
@@ -59,7 +60,10 @@ public class SignupController {
         
         Scene scene = new Scene(root);
         stage.setScene(scene);
-        stage.show();
+        stage.show();}
+        else{
+        	System.out.println("email id already in use");
+        }
        
        }
     
